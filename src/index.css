@@ -1,0 +1,101 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #24292e;
+}
+
+*.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in Internet Explorer 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.semuaForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.uiInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #32383e;
+  border: 1px solid black;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.uiInput > input{
+  text-indent: 6%;
+  border-radius: 5px;
+  width: 220px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #45515e;
+  color: white;
+  font-size: 16px;
+}
+
+::placeholder{
+  color:rgb(183, 190, 182)
+}
+
+.uiInput > h3{
+  padding-bottom: 22px;
+  align-self: flex-start;
+  color: whitesmoke;
+}
+
+.uiInput > p{
+  padding-top: 20px;
+  align-self: flex-start;
+  color:rgb(232, 72, 72);
+  width: 170px;
+  font-size: 17px;
+}
+
+.myHr {
+  position: absolute;
+  width: 100%;
+  bottom: 21%;
+  height: 10px;
+  background-color:#8d9990;
+  border: 0px solid white;
+}
+
+h2{
+  color: white;
+}
+
+.submitButton{
+  border-radius: 5px;
+  margin-top: 35px;
+  /* align-self: flex-end; */
+  padding: 8px;
+  font-size: 16px;
+  background-color: #2dba4e;
+  color: white;
+  width: 220px;
+}
+
+.submitButton:active{
+  background-color: #318d46;
+}
